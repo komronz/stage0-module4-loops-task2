@@ -2,14 +2,16 @@ package school.mjc.stage0.loops.task2;
 
 public class PowerOfTwo {
     public void printPower(int power) {
-        if (power<0) {
+        int counter = 0;
+        if(power >= 0 && power < 15){
+        while(counter <= power){
+            System.out.println((int)Math.pow(2,counter));
+            counter++;
+        }
+        }else {
             System.out.println("too much power");
-            return;
         }
-        int a=1;
-        System.out.println(a);
-        for (int i = 0; i < power; i++) {
-            System.out.println(a*=2);
-        }
+
+
     }
 }
